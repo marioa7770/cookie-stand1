@@ -1,114 +1,24 @@
 'use strict';
 
 
-let seattle = {
-  minCustomer: 23,
-  maxCustomer: 65,
-  avgCookieSale: 6.3,
+let storeHours = ['6:00am','7:00am','8.00am','9:00am','10:00am','11:00am','12:00pm','1:00pm','2:00pm','3:00pm','4:00pm','5:00pm','6:00pm','7:00pm'];
 
+const seattleStoreContainer = document.getElementById('seattleStore');
+let ulSeattle = document.createElement('ul');
+ulSeattle.tectContent = 'Seattle Store';
 
-  customersPerHour: function () {
-    console.log(this.minCustomer);
-   
+let seattleStore = {
+  customersPerHourArray: [],
+  cookieTotal: 0,
+  minCust: 23,
+  maxCust: 65,
+  avgCookiePerCust: 6.3,
+  seattleStorePerHour: function(){
+for (let i = 0; i < storeHours.length; i++){
+  let hourlyCustomer = (Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust));
 
+  console.log(hourlyCustomer)
+}
   }
   
-  },
-
-  function randomCustomer (min,max){
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }
-
-
-
-
-
-// let tokyo = {
-//   minCustomer: 3,
-//   maxCustomer: 24,
-//   avgCookieSale: 1.2,
-
-//   randomCustomerNumber: function () {
-
-//     return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
-//   },
-
-//   numberOfCookies: function () {
-//     return (this.avgCookieSale * this.randomCustomerNumber());
-//   },
-
-// };
-
-// hoursArray: [6,7,8,9,10,11,12,13,14,15,16,17,18,19];
-
-// for (let i = 0; i < hours.array.length; i++){
-
-// }
-// console.log(tokyo.numberOfCookies());
-
-// let dubai = {
-//   minCustomer: 11,
-//   maxCustomer: 38,
-//   avgCookieSale: 3.7,
-
-//   randomCustomerNumber: function () {
-
-//     return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
-//   },
-
-//   numberOfCookies: function () {
-//     return (this.avgCookieSale * this.randomCustomerNumber());
-//   },
-// };
-
-// hoursArray: [6,7,8,9,10,11,12,13,14,15,16,17,18,19];
-// for (let i = 0; i < hours.array.length; i++){
-// };
- 
-// console.log(dubai.numberOfCookies());
-
-// let paris = {
-//   minCustomer: 20,
-//   maxCustomer: 38,
-//   avgCookieSale: 2.3,
-
-//   randomCustomerNumber: function () {
-   
-//     return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
-//   },
-
-//   numberOfCookies: function () {
-//     return (this.avgCookieSale * this.randomCustomerNumber());
-//   }, 
-  
-// };
-
-// hoursArray: [6,7,8,9,10,11,12,13,14,15,16,17,18,19];
-//   for (let i = 0; i < hours.array.length; i++){
-
-// console.log(dubai.numberOfCookies());
-
-// let lima = {
-//   minCustomer: 2,
-//   maxCustomer: 16,
-//   avgCookieSale: 4.6,
-
-//   randomCustomerNumber: function () {
-
-//     return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
-//   },
-
-//   numberOfCookies: function () {
-//     return (this.avgCookieSale * this.randomCustomerNumber());
-//   },
-  
-// };
-
-// hoursArray: [6,7,8,9,10,11,12,13,14,15,16,17,18,19];
-//   for (let i = 0; i < hours.array.length; i++){
-
-// console.log(paris.numberOfCookies());
-//   }
-// }
-
 }
