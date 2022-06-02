@@ -1,50 +1,135 @@
-* {
+*{
   box-sizing: border-box;
+
+}
+header {
+  background-color:goldenrod
+ 
+}
+
+header img {
+  margin-bottom: 0cm;
+  height: 80px;
+  display: inline-flex;
+}
+
+nav {
+  margin: 1rem auto;
+  width: 960px;
+  display: flex;
+  justify-self: unset;
+  align-items: left;
+}
+
+nav li {
+  display: inline-block;
+  padding: 3rem;
+  margin-left: 20px;
 }
 
 body {
-  border: solid 1rem midnightblue;
-  margin: 2rem;
-  padding: 2rem;
-}
-header {
-  font-size: 4rem;
-  margin: 2rem;
-  padding: 2rem;
-  text-align: center;
-  border-bottom: solid .5rem midnightblue;
-}
-div {
-  border: solid .5rem cornflowerblue;
-  width: 15%;
-  padding: 2rem;
-  display:inline-table;
-  margin: 2rem;
+  font-style: oblique;
+  background-color: gray;
 }
 
-li {
-  margin: 1rem;
-  list-style-type: disc;
+
+main {
+  margin: 30px auto 0;
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-ul :last-child {
-  font-size: 1.5rem;
-  color:red;
+
+img {
+  margin-bottom: 30px;
 }
 
 footer {
-  font-size: 2rem;
-  text-align: center;
+  background-color:goldenrod;
+  height: 80px;
 }
 
-div:hover {
-  background-color:aliceblue;
-  color: crimson;
+footer li {
+  display:inline-block;
+  padding: 3rem;
+  margin-left: 20px;
+}
+
+article {
+  width: 450px;
+}
+
+article section {
+  height: 320px;
+  overflow: auto;
+
+}
+
+table, td, th {
+  border: 1px solid rgb(112, 159, 165);
+}
+
+table {
+  margin: 1rem;
+  table-layout: fixed;
+  width:100%;
+}
+
+td, th {
+  padding: 1rem;
+}
+
+thead th {
   font-weight: bold;
+  background-color:cadetblue;
+  color: white;
 }
 
-li:hover {
-  border-bottom: solid .25rem red;
-  color: black;
-  font-weight: bolder;
-  padding: .5rem;
+tfoot {
+    font-weight:bold;
+  background-color: cadetblue;
+  color:white;
+}
+
+
+
+
+
+body {
+  background-color:blanchedalmond;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 2rem;
+
+}
+
+.location {
+  background-color: bisque;
+  padding: 0 1rem;
+  transition: all 0.5s ease-out;
+}
+
+.location:hover {
+  transform: scale(1.1);
+}
+
+.flex {
+  display:flex;
+  justify-content: space-between;
+}
+
+ul {
+  margin-left: 1rem;
+  list-style: disc;
+  padding-left: 1rem;
+
+}
+
+ol {
+  list-style-position: inside;
+  list-style: decimal;
+  padding: 1rem;
+  margin-left: 1rem;
 }
