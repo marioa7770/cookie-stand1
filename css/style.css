@@ -7,6 +7,10 @@ header {
  
 }
 
+h1 {
+  text-align: center;
+}
+
 header img {
   margin-bottom: 0cm;
   height: 80px;
@@ -68,34 +72,6 @@ article section {
 
 }
 
-table, td, th {
-  border: 1px solid rgb(112, 159, 165);
-}
-
-table {
-  margin: 1rem;
-  table-layout: fixed;
-  width:100%;
-}
-
-td, th {
-  padding: 1rem;
-}
-
-thead th {
-  font-weight: bold;
-  background-color:cadetblue;
-  color: white;
-}
-
-tfoot {
-    font-weight:bold;
-  background-color: cadetblue;
-  color:white;
-}
-
-
-
 
 
 body {
@@ -133,3 +109,11 @@ ol {
   padding: 1rem;
   margin-left: 1rem;
 }
+
+article section {
+  height: 275px;
+  overflow: auto;
+  margin-bottom: 10px;
+  background-color:royalblue ;
+}
+
