@@ -1,3 +1,25 @@
 body {
   background-color: goldenrod;
 }
+table{
+  max-width: 100rem;
+  max-height: 30rem;
+  margin: 5rem;
+  padding: 5rem;
+  border: 0.2rem solid black
+  
+}
+
+thead {
+  border: 0.1rem solid black;
+  
+}
+
+tbody {
+  border: 0.1rem solid black;
+}
+
+tr {
+  border: 0.1rem solid black;
+}
+
